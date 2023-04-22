@@ -6,6 +6,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mr_17.khabresh.MainActivity
 import com.mr_17.khabresh.R
@@ -75,6 +76,12 @@ class HomeFragment : Fragment(R.layout.fragment_home),
     }
 
     override fun onClick(article: Article) {
-        TODO("Not yet implemented")
+        val bundle = Bundle().apply {
+            putSerializable("article", article)
+        }
+        findNavController().navigate(
+            R.id.action_homeFragment_to_articleFragment,
+            bundle
+        )
     }
 }

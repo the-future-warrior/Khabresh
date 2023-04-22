@@ -7,6 +7,7 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mr_17.khabresh.MainActivity
 import com.mr_17.khabresh.R
@@ -96,6 +97,12 @@ class SearchFragment : Fragment(R.layout.fragment_search),
     }
 
     override fun onClick(article: Article) {
-        TODO("Not yet implemented")
+        val bundle = Bundle().apply {
+            putSerializable("article", article)
+        }
+        findNavController().navigate(
+            R.id.action_searchFragment_to_articleFragment,
+            bundle
+        )
     }
 }
