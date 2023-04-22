@@ -1,4 +1,4 @@
-package com.mr_17.khabresh
+package com.mr_17.khabresh.models
 
 data class NewsResponse(
     val articles: List<Article>,

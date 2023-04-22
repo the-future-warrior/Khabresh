@@ -1,6 +1,6 @@
 package com.mr_17.khabresh.api;
 
-import com.mr_17.khabresh.NewsResponse
+import com.mr_17.khabresh.models.NewsResponse
 import com.mr_17.khabresh.utils.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET;

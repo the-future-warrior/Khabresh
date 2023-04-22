@@ -2,7 +2,7 @@ package com.mr_17.khabresh.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.mr_17.khabresh.Article
+import com.mr_17.khabresh.models.Article
 
 @Dao
 interface ArticleDao {

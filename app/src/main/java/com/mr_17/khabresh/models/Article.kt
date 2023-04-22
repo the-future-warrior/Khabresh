@@ -1,4 +1,4 @@
-package com.mr_17.khabresh
+package com.mr_17.khabresh.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
